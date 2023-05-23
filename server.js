@@ -1,12 +1,9 @@
 const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
-<<<<<<< HEAD
 const mongoose = require('mongoose');
 const homeRoutes = require("./routes/home");
-=======
 const mainRoutes = require("./routes/main");
->>>>>>> 0e5713170da2973c4352ddc592022fd8462b30e0
 const connectDB = require('./config/database');
 const methodOverride = require("method-override");
 const flash = require("express-flash");
