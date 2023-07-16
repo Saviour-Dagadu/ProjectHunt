@@ -4,6 +4,7 @@ const dotenv = require("dotenv");
 const mongoose = require('mongoose');
 // const homeRoutes = require("./routes/home");
 const mainRoutes = require("./routes/main");
+const projectRoutes = require("./routes/projects");
 const connectDB = require('./config/database');
 const methodOverride = require("method-override");
 const flash = require("express-flash");
@@ -52,6 +53,7 @@ app.use(flash());
 
 //Setup Routes
 app.use("/", mainRoutes);
+app.use("/", projectRoutes);
 
 //Server Running
 app.listen(process.env.PORT, () => {
